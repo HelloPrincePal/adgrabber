@@ -100,7 +100,8 @@ button {
 
 footer {
     background-color: #f0f0f0;
-   
+    position: fixed;
+    bottom: 0;
     padding: 10px;
     text-align: center;
 }
