@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdGrabber - Save Your Favorite YouTube Ads Instantly!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <header>
+            <div class="logo">
+                <img src="path_to_logo_image.png" alt="AdGrabber">
+                AdGrabber
+            </div>
+            <a href="#" class="linkedin-button">Connect on LinkedIn</a>
+        </header>
+        <main>
+            <h1>Save Your Favorite YouTube Ads Instantly!</h1>
+            <p>Easily capture and share the ads you love. Simple, quick, and hassle-free!</p>
+            <div class="search-container">
+                <input type="text" id="debugInfo" placeholder="Paste YouTube Debug Info here">
+                <button onclick="searchAd()">
+                    <img src="path_to_search_icon.png" alt="Search">
+                </button>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-image"></div>
+                    <h3>Step 1</h3>
+                    <p>Right-click on the ad and select 'Copy debug info'.</p>
+                </div>
+                <div class="step">
+                    <div class="step-image"></div>
+                    <h3>Step 2</h3>
+                    <p>Paste the debug info into the search bar and click 'Find'</p>
+                </div>
+                <div class="step">
+                    <div class="step-image"></div>
+                    <h3>Step 3</h3>
+                    <p>Link is copied to your clipboard. Paste it in a new tab to watch.</p>
+                </div>
+            </div>
+            <div id="result"></div>
+        </main>
+        <footer>
+            <span>made with ❤️</span>
+            <span>by princepal.me</span>
+            <span>©2024 AdGrabber</span>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
