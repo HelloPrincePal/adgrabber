@@ -89,7 +89,9 @@ button {
 }
 
 .step {
-    width: 30%;
+    /* width: 30%; */
+    flex: 33.33%;
+    padding: 15px;
 }
 
 .step-image {
@@ -118,4 +120,5 @@ footer span {
 img {
   width: 100%;
   height: auto;
+    aspect-ratio: 16/9;
 }
