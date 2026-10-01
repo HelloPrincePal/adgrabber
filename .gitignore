@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Secrets and local env
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+**/secrets.json
+
+# Analytics and spreadsheet exports (never commit)
+*.csv
+*.xlsx
+*.xls
+
+# Editor / tooling
+.idea/
+*.log
+*.swp
+*~
+.vscode/
+
+# Dependencies (if added later)
+node_modules/

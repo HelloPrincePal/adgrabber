@@ -1,0 +1,12 @@
+---
+description: AdGrabber project constraints for coding agents
+alwaysApply: true
+---
+
+Follow [AGENTS.md](AGENTS.md). Read [docs/architecture.md](docs/architecture.md) and [docs/roadmap.md](docs/roadmap.md) before product changes.
+
+Do not implement the redesign, a database, or staged rollout unless the user explicitly asks.
+
+Do not commit analytics exports, `*.csv`, `*.xlsx`, `.env`, or secrets. GitHub Pages publishes the repo root.
+
+Do not load files from `archive/` in the live page. Measurement IDs in `index.html` are public client IDs, not secrets.
