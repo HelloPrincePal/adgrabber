@@ -10,3 +10,5 @@ Do not implement the redesign, a database, or staged rollout unless the user exp
 Do not commit analytics exports, `*.csv`, `*.xlsx`, `.env`, or secrets. GitHub Pages publishes the repo root.
 
 Do not load files from `archive/` in the live page. Measurement IDs in `index.html` are public client IDs, not secrets.
+
+Save every plan (including Plan Mode output) to `plans/YYYY-MM-DD-cursor-<slug>.md` at the repo root, not `.cursor/plans/`. `plans/` is gitignored and shared with other agents; read it before related work and never commit it.

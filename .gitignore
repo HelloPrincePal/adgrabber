@@ -25,3 +25,6 @@ credentials.json
 
 # Dependencies (if added later)
 node_modules/
+
+# Agent plans from Claude, Cursor, Codex/GPT (local only, never commit)
+plans/

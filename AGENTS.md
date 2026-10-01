@@ -13,6 +13,8 @@ Touch these only when the user asked for a product change:
 - `index.html`
 - `script.js`
 - `styles.css`
+- `consent.js` (EU-only consent banner; loads Hotjar)
+- `privacy.html`
 - `CNAME`
 - `Assets/` (brand images and icons used by the page)
 
@@ -26,6 +28,15 @@ Do not wire `archive/` into the runtime path.
 - Measurement IDs in `index.html` (GA4, Hotjar, Clarity) are public client IDs, not secrets. Do not rotate them or treat them as leaks.
 - Prefer small changes. No force-push to `main`.
 - Record a new file under `docs/decisions/` before leaving static GitHub Pages (backend, CDN, database vendor).
+
+## Plans
+
+All agents (Claude Code, Cursor, Codex/GPT, others) share one plans folder: `plans/` at the repo root.
+
+- Write every plan to `plans/YYYY-MM-DD-<tool>-<slug>.md` (for example `2026-10-01-cursor-inline-toast.md`). Create the folder if it is missing.
+- Do not save plans in tool-specific folders (`~/.claude/plans`, `.cursor/plans`, etc.).
+- `plans/` is gitignored. Never commit or force-add it.
+- Before starting related work, read existing plans in `plans/`.
 
 ## Commands
 

@@ -33,13 +33,17 @@ adgrabber/
 ├── archive/                # Historical design binaries (not used at runtime)
 ├── design/                 # Pointer to design notes and archive
 ├── docs/                   # Architecture, roadmap, security, deployment
+├── plans/                  # Local agent plans (gitignored, never pushed)
+├── .claude/settings.json   # Claude Code: plans go to plans/
 ├── .cursor/rules/          # Cursor agent rules
 ├── .gitignore
 ├── AGENTS.md               # Map for coding agents
 ├── CHANGELOG.md
 ├── CNAME                   # Custom domain (www.adgrabber.in)
+├── consent.js              # EU-only consent banner, loads Hotjar
 ├── index.html              # Landing page
 ├── LICENSE
+├── privacy.html            # Privacy notice
 ├── README.md
 ├── script.js               # Debug info → video link
 └── styles.css
@@ -67,6 +71,8 @@ AdGrabber uses page-level usage insights (not a log of generated ad links):
 - **Google Analytics** (GA4)
 - **Hotjar** — Heatmaps and session recordings
 - **Microsoft Clarity** — Behavior analytics
+
+Built, but switched off: an anonymous log of generated ad video IDs to a private Google Sheet. Design is in [docs/architecture.md](docs/architecture.md#usage-telemetry-google-sheets-flag-off). Privacy rules and the compliance gaps we have today are in [docs/security-privacy.md](docs/security-privacy.md#compliance-status-oct-2026).
 
 ---
 

@@ -23,7 +23,8 @@ Use this file to see what is done, what is next, and what must wait for an expli
 
 | Item | Status | Notes |
 |------|--------|--------|
-| Log generated video IDs (database) | Not started | GitHub Pages cannot persist this. Store video ID + timestamp + coarse metadata only — **never raw debug JSON**. Off by default until a flag is on. Vendor (Supabase, Cloudflare D1, etc.) is an ADR in `docs/decisions/`. Privacy: [security-privacy.md](security-privacy.md). |
+| Privacy page + EU-only consent banner | Built | `privacy.html`, `consent.js`. See [security-privacy.md](security-privacy.md#compliance-status-oct-2026). |
+| Log generated video IDs (Google Sheets) | Built, flag off | Client `logEvent` in `script.js` behind `TELEMETRY_ENABLED`. Apps Script + private sheet on the owner's personal Google account ([architecture.md](architecture.md#usage-telemetry-google-sheets-flag-off), [ADR](decisions/2026-10-01-google-sheets-telemetry.md)). Never raw debug JSON. Apps Script URL is set. Turn on once `privacy.html` is live. |
 | Staged rollout (preview → cohort → geo → 100%) | Not started | Not native to GitHub Pages. See [deployment.md](deployment.md). |
 | CDN / edge in front of Pages | Not started | Required for real geo canaries. ADR when chosen. |
 
